@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimerFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <EditText
+        android:id="@+id/hour"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="140dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="2"
+        android:text="@string/zerozero"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/colon1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/colon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/colon"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hour"
+        app:layout_constraintEnd_toStartOf="@+id/minute"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/hour"
+        app:layout_constraintTop_toTopOf="@+id/hour"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/minute"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:text="@string/zerozero"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hour"
+        app:layout_constraintEnd_toStartOf="@+id/colon2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/colon1"
+        app:layout_constraintTop_toTopOf="@+id/hour"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/colon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/colon"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="@+id/minute"
+        app:layout_constraintEnd_toStartOf="@+id/second"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/minute"
+        app:layout_constraintTop_toTopOf="@+id/minute"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/second"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:maxLength="2"
+        android:text="@string/zerozero"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="75sp"
+        app:layout_constraintBottom_toBottomOf="@+id/minute"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/colon2"
+        app:layout_constraintTop_toTopOf="@+id/minute"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/start_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="130dp"
+        android:text="@string/start"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reset"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/start_pause"
+        app:layout_constraintTop_toTopOf="@id/start_pause" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

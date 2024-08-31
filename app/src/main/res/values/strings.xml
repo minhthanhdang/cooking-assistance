@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">CookingAssistance</string>
+    <string name="home">Home</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="ingredients_checklist">Ingredients Checklis</string>
+    <string name="add_recipe">Add Recipe</string>
+    <string name="about">About</string>
+
+
+    <string name="nav_open">Open menu</string>
+    <string name="nav_close">Close menu</string>
+
+    <string name="Steps">Steps</string>
+    <string name="Ingredients">Ingredients</string>
+    <string name="of">of</string>
+    <string name="amount">amount</string>
+    <string name="ingredient">ingredient</string>
+    <string name="recipe_name">recipe name</string>
+    <string name="delete">Delete</string>
+    <string name="timer">Timer</string>
+    <string name="stopwatch">Stopwatch</string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
+
+    <string name="colon">:</string>
+    <string name="zerozero">00</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pause">Pause</string>
+    <string name="change_image">Change Image</string>
+    <string name="add_image">+ Add Image</string>
+    <string name="about_cooking_assistance">About Cooking Assistance</string>
+    <string name="search">Search</string>
+    <string name="main_desc">Cooking Assistance is a CRUD app made for Swinburne Software Development for Mobile Devices custom app. The app makes cooking easier by saving recipes and provides relevant useful functions for cooking.</string>
+    <string name="about_name">Student name: Minh Thanh Dang</string>
+    <string name="about_id">Student ID: 103824041</string>
+
+</resources>
